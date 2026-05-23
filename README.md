@@ -507,6 +507,7 @@ Do NOT use the GUI `Check for updates` button. The GUI triggers a global, concur
 Because OPNsense integrates `bectl` into its backend framework, you can manage snapshots via the CLI or right from the Web GUI dashboard under `System: Snapshots`.
 
 <details>
+
 <summary>From GUI</summary>
 
 * Go to `System: Snapshots` and click the orange `+` button to create a ZFS backup (snapshot).
@@ -519,6 +520,7 @@ Because OPNsense integrates `bectl` into its backend framework, you can manage s
 
 
 <details>
+
 <summary>From CLI</summary>
 
 * Whenever you are about to modify a major system configuration, install an experimental plugin, or adjust core networking routing logic, run this terminal command:
@@ -548,7 +550,7 @@ default           NR     /          1.85G 2026-03-17 14:54
 
 * For a security perimeter firewall, a weekly rotation is ideal. You do not want a daily cron snapshot script running indefinitely, as a massive influx of automated snapshots can clutter your ZFS storage pool metadata over time.
 
-<details>
+</details>
 
 ## Scheduled ZFS Backups
 
