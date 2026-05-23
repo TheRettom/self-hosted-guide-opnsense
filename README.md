@@ -494,6 +494,18 @@ Apply the settings.
 
 Make sure you pick either Quad9 or Cloudflare, not both. Unless you want to. I don't care.
 
+# Actually Connecting the OPNsense Device to WAN and LAN
+
+Assuming you did all of this isolated from the existing main network, or on its on LAN, you should be ready AFTER configuring [AdGuard Home](./AdGuard/README.md). If you don't want to use AdGuard Home, then go to `Services: Unbound DNS: General` and change the `Listen Port` to `53`. You should be good to go.
+
+# Next Steps
+
+🔰 [AdGuard Home](./AdGuard/README.md): DNS blocker that intercepts tracking and advertisements at the gateway level before they ever reach your devices.
+
+🌐 [CrowdSec](./CrowdSec/README.md): Collaborative, behavior-based security engine that analyzes system logs to detect malicious activity and automatically blocks aggressive IP addresses using a globally shared threat intelligence network.
+
+🥷 [Zenarmor](./Zenarmor/README.md): Lightweight, next-generation firewall plugin that provides enterprise-grade deep packet inspection (DPI), application filtering, and advanced web security controls.
+
 ---------
 
 # Updates
